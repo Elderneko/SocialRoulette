@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="primary_material_dark">#ff0000</color>
+    <color name="primary_dark_material_dark">#820000</color>
+    <color name="accent_yellow_soviet">#ffdd00</color>
+    <color name="redSoviet">#ff1100</color>
+    <color name="redSovietDark">#af0003</color>
 </resources>
