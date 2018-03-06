@@ -5,190 +5,263 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:theme="@style/Soviet">
 
     <ImageView
-        android:id="@+id/bala"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/cyl"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:onClick="ponbala1"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
-        android:onClick="ponbala2"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala8"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala8"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="28dp"
-        android:onClick="ponbala3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala9"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala9"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="ponbala4"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala10"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala10"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:onClick="ponbala5"
-        android:layout_marginBottom="8dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala11"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala11"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="ponbala6"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Cilindro vacio"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
-        android:onClick="ponbala1"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/bala4"
-        app:layout_constraintEnd_toStartOf="@+id/bala6"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toEndOf="@+id/bala2"
-        app:layout_constraintTop_toTopOf="@+id/cylinder"
-        app:layout_constraintVertical_bias="0.0"
-
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/bala2"
-        android:onClick="ponbala2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginStart="96dp"
-        app:layout_constraintBottom_toTopOf="@+id/bala3"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bullet"
-
-        android:visibility="invisible"/>
-
-    <ImageView
-        android:id="@+id/bala3"
-        android:onClick="ponbala3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="144dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toStartOf="@+id/bala4"
-        app:srcCompat="@drawable/bullet"
-
-        android:visibility="invisible"/>
-
-    <ImageView
-        android:id="@+id/bala4"
-        android:onClick="ponbala4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="112dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toEndOf="@+id/cylinder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bullet"
-
-        android:visibility="invisible"/>
-
-    <ImageView
-        android:id="@+id/bala5"
-        android:onClick="ponbala5"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="144dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cylinder"
-        app:layout_constraintEnd_toEndOf="@+id/cylinder"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toEndOf="@+id/bala4"
-        app:srcCompat="@drawable/bullet"
-
-        android:visibility="invisible"/>
-
-    <ImageView
-        android:id="@+id/bala6"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="108dp"
-
-        android:onClick="ponbala6"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/bala5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/bullet" />
-
-    <ImageView
-        android:id="@+id/cylinder"
-        android:layout_width="384dp"
-        android:layout_height="444dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cylinder" />
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/cyl" />
 
     <ImageView
-        android:id="@+id/dispara"
-        android:layout_width="wrap_content"
-        android:layout_height="105dp"
+        android:id="@+id/bal1"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar primera bala"
+        android:onClick="ponbala1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal1" />
+
+    <ImageView
+        android:id="@+id/bal2"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar segunda bala"
+        android:onClick="ponbala2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal2" />
+
+    <ImageView
+        android:id="@+id/bal3"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar tercera bala"
+        android:onClick="ponbala3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal3" />
+
+    <ImageView
+        android:id="@+id/bal4"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar cuarta bala"
+        android:onClick="ponbala4"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal4" />
+
+    <ImageView
+        android:id="@+id/bal5"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar quinta bala"
+        android:onClick="ponbala5"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal5" />
+
+    <ImageView
+        android:id="@+id/bal6"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Quitar sexta bala"
+        android:onClick="ponbala6"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/bal6" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="Poner primera bala"
+        android:onClick="goToHome"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bal6"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/balaN1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Poner primera bala"
+        android:onClick="ponbala1"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN2"
+        app:layout_constraintTop_toBottomOf="@+id/bal6"
+        app:layout_constraintVertical_bias="0.524"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/balaN2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:contentDescription="Poner segunda bala"
+        android:onClick="ponbala2"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN3"
+        app:layout_constraintTop_toBottomOf="@+id/bal2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/balaN3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Poner tercera bala"
+        android:onClick="ponbala3"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN4"
+        app:layout_constraintTop_toBottomOf="@+id/bal2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/balaN4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Poner cuarta bala"
+        android:onClick="ponbala4"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN5"
+        app:layout_constraintTop_toBottomOf="@+id/bal2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/balaN5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Poner quinta bala"
+        android:onClick="ponbala5"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toStartOf="@+id/balaN6"
+        app:layout_constraintTop_toBottomOf="@+id/bal2"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/balaN6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Poner sexta bala"
+        android:onClick="ponbala6"
+        app:layout_constraintBottom_toTopOf="@+id/dispara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bal2"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/bala" />
+
+    <ImageView
+        android:id="@+id/dispara"
+        android:layout_width="291dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:contentDescription="Disparar"
         android:onClick="disparar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cylinder"
         app:srcCompat="@drawable/disparar" />
+
 
 </android.support.constraint.ConstraintLayout>
